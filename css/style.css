@@ -1,0 +1,170 @@
+.navGrid {
+    display: grid;
+    height: 50px;
+    grid-template-columns: 5% 15% 79%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+      "icon title content";
+    }
+  
+    .nav1 {
+        grid-area: icon;
+        padding-left: 40px;
+        margin-top: 10px;
+        }
+
+    .logo {
+        margin: 10px;
+        width: 3%;
+        padding:1%; 
+        display:inline;
+        }
+    
+    .myName {
+        grid-area: title;
+        Font-Family: 'Roboto';
+        font-weight: 400;
+        color: #2b2b2b;
+        padding: 20px;
+        padding-right: 45px;
+        align-items:baseline;
+        }
+  
+  
+  .content {
+    grid-area: content;
+     display: grid; 
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: Flex-end;
+    padding: 20px;
+    }
+
+
+  .nestedGrid {
+   Font-Family: 'Roboto';
+   padding: 3px;
+   padding-right: 50px;
+   font-weight: 300;
+   color: #2b2b2b;}
+    
+  
+    .aboutMeContent {
+        width:800px;
+        height: 225px; 
+        margin-top: 20px;
+        margin-left: 30px; 
+        padding: 25%;
+        Font-Family: 'Roboto';
+        background-image:  url("../images/HP_Background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 98%;
+        /*outline: 1px solid red;*/
+}
+
+    .img1 {border-radius: 50%;
+    border: 8px solid #ffffff;
+    }
+
+
+   h2 { 
+        Font-family: 'roboto'; 
+        font-weight: 700; 
+        font-size: 300%;
+        color: #5CECFF;}
+
+        h3 { 
+            Font-family: 'roboto'; 
+            font-weight: 400; 
+            font-size: 200%;
+            width: 85%;
+            line-height: 130%;
+            color: #ffffff;}
+
+            p { 
+                Font-family: 'roboto'; 
+                font-weight: 400;
+                line-height: 140%; 
+                font-size: 130%;
+                width: 80%;
+                color: #5CECFF;}
+
+                .button {
+                    display:flex;
+                    Font-family: 'roboto'; 
+                    font-weight: 400; 
+                    font-size: 125%;
+                    padding-right: 17%;
+                    justify-content:flex-end ;
+                    color: #5CECFF;}
+
+  
+  
+  .footerContainer {
+    display: grid;
+    height: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    Font-family: 'roboto'; 
+    font-weight: 400; 
+    font-size: 100%;
+    color: #2b2b2b;
+    margin: 1%;
+    display:flex;
+    justify-content: center;
+    grid-template-areas: 
+    "IG Pin LI";
+    }   
+
+    .footer1{
+        grid-area: IG;
+        padding-right: 2%;
+        Font-family: 'roboto'; 
+        font-weight: 400; 
+        font-size: 80%;
+        align-items: center;
+    }
+    
+    .footer2{
+        grid-area: Pin;
+        Font-family: 'roboto'; 
+          font-weight: 400; 
+          font-size: 80%;
+          padding-right: 2%;
+        }
+          
+    .footer3{
+        grid-area: LI;
+        Font-family: 'roboto'; 
+        font-weight: 400; 
+        font-size: 80%;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr ;
+        display: flex;
+        justify-content: center;
+        grid-template-areas:
+        "arrow preload"
+    }
+
+    .bounceMe {
+        animation: bounceArrow .9s infinite;
+        display: flex;
+        align-items: center;
+        }
+
+
+      @keyframes bounceArrow {
+        from {
+            transform: translate3D(0px, 0px, 0px);
+        }
+        
+        to {transform: translate3D(0px, 10px, 0px);
+        }
+
+    }

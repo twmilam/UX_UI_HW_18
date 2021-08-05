@@ -9,6 +9,10 @@ body{ Font-family: 'roboto';
     height: 70px;
     
     grid-template-columns: 5% 15% 79%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
     grid-template-rows: 1fr;
     background-color: #ffffff;
     grid-template-areas: 
@@ -74,6 +78,7 @@ body{ Font-family: 'roboto';
         margin-left: -8%; 
         padding: 25%;
         z-index: 1;
+        
         /*background-image:  url("../images/HP_Background.jpg");*/
         
         background-size: cover;
@@ -93,7 +98,7 @@ body{ Font-family: 'roboto';
 }
         
         
-    .img1 {
+    .img10 {
         display:flex;
         grid-area: img1Port;
         border-radius: 50%;
@@ -588,18 +593,124 @@ body{ Font-family: 'roboto';
 
      
      
- @media only screen and (max-width: 600px) { 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        @media only screen and (max-width: 600px) { 
+
+
+    /* MEDIA Q - NAV SECTION */
+
+    .navGrid {
+        display: grid;
+        height: 200px;
+        
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: #ffffff;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 25;
+        grid-template-areas: 
+          "icon"
+          "title" 
+          "content";
+        }
+      
+        .nav1 {
+            grid-area: icon;
+            
+            display:flex;
+            justify-content:center;
+            
+            }
+
+            .img10 {
+                display:flex;
+                grid-area: img1Port;
+                border-radius: 50%;
+                justify-content:center;
+                border: 8px solid #ffffff;
+                z-index: 10;
+                width: 150px;
+                height: 150px;
+                
+            }
+
+          
+    
+        .logo {
+            display:flex;
+            margin: 10px;
+            width: 3%;
+            padding:1%;
+            margin-right: 20%;
+            margin-top: 10px; 
+            display:inline;
+            }
+        
+        .myName {
+            grid-area: title;
+            display:flex;
+            font-weight: 400;
+            color: #2b2b2b;
+            margin-top: -4%;
+            justify-content:center;
+            }
+      
+      
+      .content {
+        grid-area: content;
+        display: grid; 
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        padding: 20px;
+        }
+    
+    
+      .nestedGrid {
+       
+       padding: 3px;
+       padding-right: 15px;
+       font-weight: 300;
+       color: rgb(128, 128, 128);}
+    
+       .workMenu {
+       
+        padding: 3px;
+        padding-right: 15px;
+        font-weight: 300;
+        color: #50d2e4;}
+        
+/* MEDIA Q - HERO SECTION */
 
 
     .aboutMeHeroContent {
         display: grid;
-         width:800px;
-        height: 400px; 
-        margin-top: 20px;
+         width:600px;
+        height:1000px; 
+        margin-top: 150px;
         margin-left: -8%; 
         padding: 25%;
         z-index: 1;
-        /*background-image:  url("../images/HP_Background.jpg");*/
+        background-image:  url("../images/HP_Background2.jpg");
         
         background-size: cover;
         background-repeat: no-repeat;
@@ -615,23 +726,131 @@ body{ Font-family: 'roboto';
         "learnMore";
         }
 
-        .mtnBackground {
+        .img1 {
+            display:flex;
+            grid-area: img1Port;
+            border-radius: 50%;
+            justify-content:center;
+            align-content: center;
+            border: 8px solid #ffffff;
+            z-index: 10;
+            
+        }
+    
+        .Hello5 { 
+            display:flex;
+            width: 120%;
+            margin-top: 3%;
+            margin-left: -5%;
+            
+            grid-area: HelloTitle;
+            font-weight: 700; 
+            font-size: 200%;
+            color: #5CECFF;
+            
+        }
+    
+            .myNameTom {
+                display:grid; 
+                margin-left: -5%;
+                
+             
+                grid-area: TomName;
+                grid-template-columns: 100%;
+                grid-template-rows: 1fr 1fr;
+                 grid-template-areas:
+                "Namelist1"
+                "Namelist2";
+                        
+                margin-top: 2%;
+                font-weight: 400; 
+                font-size: 200%;
+                color: #ffffff;
+                z-index: 1;
+                }
+    
+                .Name-11 { width: 100%;
+                    grid-area: Namelist1;
+                    z-index: 1;
+                    font-size: 75%;
                     
-            left: -50%;
-            top: -75%;
+                
+                }
+    
+                    .Name-22 { width: 100%;
+                        grid-area: Namelist2;
+                        margin-top: 0.5%;
+                        z-index: 1;
+                        font-size: 75%;
+                        
+                    }   
+                
+    
+                .myStoryTelling { 
+                    display:flex;
+                    grid-area: pDescript;
+                    margin-top: 2%;
+                    font-weight: 400;
+                    line-height: 140%; 
+                    font-size: 130%;
+                    width: 45%;
+                    color: #5CECFF;
+                    z-index: 1;
+                    margin-left: -5%;
+                
+                }
+    
+                    .button {
+                        grid-area: learnMore;
+                        display:flex;
+                        margin-top: 6%;
+                        font-weight: 400; 
+                        font-size: 125%;
+                        padding-right: 40%;
+                        justify-content:flex-end ;
+                        color: #5CECFF;
+                        z-index: 1;
+                        
+                    
+                    }
+
+        .mtnBackground {
+            
+                    
+            background-position: -9999px -9999px;
             z-index: -10;
             margin-bottom: -20%;}
 
 /* MEDIA Q - WORK SECTION */
+
+
+
+
+
+
+
+.myWorkTitle { 
+
+    Margin-top: 10%;
+        
+    text-align: center;
+   
+    justify-content: center;
+    color: rgb(128, 128, 128);
+   Font-family: 'roboto'; 
+   font-weight: 400; 
+   font-size: 120%;
+              
+
+}
             .workGrid { 
                 display: grid;
-                margin: 0%;
                 grid-template-columns: 100%;
+                height: 1200px;
+                padding-top: 0%;
             
-                padding-top: 1%;
                 padding-left: 0%;
-                margin-left: 5%;
-                margin-right: 5%;
+               
                 border: 0px solid rgb(189, 189, 189);
                 grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
                 grid-template-areas:
@@ -642,6 +861,99 @@ body{ Font-family: 'roboto';
                 "projName2"
                 "img3" 
                 "projName3"; }
+
+              
+                
+
+
+               
+                 
+                 
+                 .categoryGridPhoto1 { 
+                    grid-area: img1;
+                    
+                    
+                    
+                    }
+                 
+                 .workContainerText1 { 
+                    grid-area: projName1;
+                    margin-top: -15%;
+                    
+                    
+                    
+                    }
+                 
+                 
+                 
+               .categoryGridPhoto2  { 
+                    grid-area: img2;
+                    margin-top: -5%;
+                    }
+                 
+                 .workContainerText2 { 
+                    grid-area: projName2;
+                    margin-top: -20%;
+                  }
+
+
+                 
+                 .categoryGridPhoto3  { 
+                    grid-area: img3;
+                }
+                 
+                 .workContainerText3 { 
+                    grid-area: projName3;
+                    margin-top: -15%;
+                    }
+                 
+                 
+                 .workTitle { 
+                     /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 25px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .workDescript { 
+                    /*outline: 1px solid red;*/
+                    color: rgb(128, 128, 128);
+                    font-weight: 200; 
+                    font-size: 15px;
+                    margin-left: 0%;
+                    text-align: center;
+                 }
+                 
+                 .button1 {
+                    Background-color: #ffffff;
+                    border: 2px solid rgb(196, 196, 196);
+                    text-decoration: none;
+                    
+                    margin-left: 1%;
+                    
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 15px;
+                    align-content: center;
+                    
+                    /*outline: 1px solid red;*/
+                    
+                 
+                 }
+                 
+                 .viewProj {  
+                    display:flex;
+                    text-align: center;
+                    margin-top: 2%; 
+                    justify-content:center;
+                    color: rgb(128, 128, 128);
+                    font-weight: 400; 
+                    font-size: 120%; }
+
+
+
                 
                 
 /* MEDIA Q - SKILLS SECTION */
@@ -656,17 +968,17 @@ body{ Font-family: 'roboto';
                 font-size: 120%;
                 }
         
-            .skillsContainer {
+    .skillsContainer {
                 Display: grid;
-                height: 550px;
+                height: 1000px;
                 margin-left: 2%;
-                margin-right: 2%;
+                margin-right: 16%;
                 grid-template-columns:100%;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
                  /*outline: 1px solid red;*/
                 }
         
-            .skillOne  { width: 100%;
+        .skillOne  { width: 100%;
                 
                 justify-content:center;
                 margin: 3%;
@@ -692,7 +1004,7 @@ body{ Font-family: 'roboto';
                 text-align:center;
                 }
         
-            .skillTwo { width: 100%; 
+        .skillTwo { width: 100%; 
                 /*outline: 1px solid red;*/
                 justify-content:center;
                 margin: 3%;
@@ -722,7 +1034,7 @@ body{ Font-family: 'roboto';
         
         
         
-            .skillThree { width: 100%;
+        .skillThree { width: 100%;
                 /*outline: 1px solid red;*/
                 justify-content:center;
                 margin: 3%;
@@ -815,4 +1127,4 @@ body{ Font-family: 'roboto';
                     margin-top: 0%;
                     justify-content:center;
                     /*outline: 1px solid red;*/}    
-                    } 
+   }                   
